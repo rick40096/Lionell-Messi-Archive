@@ -9,7 +9,7 @@
   
   
   
-  <a href="https://telegram.me/Rickz_2005">
+  <a href="https://telegram.me/messi_probot">
     <img src="https://img.shields.io/badge/Telegram-blue?style=for-the-badge&logo=telegram"/>
   </a>  
  </a>
