@@ -1,7 +1,7 @@
 FROM debian:11
 FROM python:3.10.5-slim-buster
 
-WORKDIR /EmikoRobot/
+WORKDIR /Messi/
 
 RUN apt-get update && apt-get upgrade -y
 RUN apt-get -y install git
@@ -14,4 +14,4 @@ RUN pip3 install wheel
 RUN pip3 install -U -r requirements.txt
 
 COPY . .
-CMD ["python3", "-m", "EmikoRobot"]
+CMD ["python3", "-m", ""]
