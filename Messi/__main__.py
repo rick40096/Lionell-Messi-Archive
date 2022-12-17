@@ -84,7 +84,7 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 *Hello {} !*
-✪ I'm *Lionell Messi* an football-themed management bot [✨](https://telegra.ph/file/11b5922a33de9968cedfe.jpg)
+✪ I'm *Lionell Messi* an football-themed management bot [✨](https://graph.org//file/e17d325b324f88bfeef9c.jpg)
 ────────────────────────
 × *Uptime:* `{}`
 × `{}` *users, across* `{}` *chats.*
@@ -94,7 +94,7 @@ PM_START_TEXT = """
 
 buttons = [
     [
-        InlineKeyboardButton(text=f"About {dispatcher.bot.first_name}", callback_data="emiko_"),
+        InlineKeyboardButton(text=f"About {dispatcher.bot.first_name}", callback_data="messi_"),
     ],
     [
         InlineKeyboardButton(text="Get Help", callback_data="help_back"),
@@ -231,7 +231,7 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_text(
-            f"👋 Hi, I'm *Lionell Messi*. Nice to meet You.",
+            f"👋 Hi, I'm *Lionell Messi*. Nice to meet You. If You Have Any Queries About Me , Join @Messi_Probot_Support",
             parse_mode=ParseMode.HTML
        )
 
@@ -358,9 +358,9 @@ def help_button(update, context):
         pass
 
 
-def emiko_about_callback(update, context):
+def messi_about_callback(update, context):
     query = update.callback_query
-    if query.data == "emiko_":
+    if query.data == "messi_":
         query.message.edit_text(
             text=f"๏ I'm *Lionell Messi*, a powerful group management bot built to help you manage your group easily."
             "\n• I can restrict users."
@@ -376,15 +376,15 @@ def emiko_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Admins", callback_data="emiko_admin"),
-                    InlineKeyboardButton(text="Notes", callback_data="emiko_notes"),
+                    InlineKeyboardButton(text="Admins", callback_data="messi_admin"),
+                    InlineKeyboardButton(text="Notes", callback_data="messi_notes"),
                  ],
                  [
-                    InlineKeyboardButton(text="Support", callback_data="emiko_support"),
-                    InlineKeyboardButton(text="Credits", callback_data="emiko_credit"),
+                    InlineKeyboardButton(text="Support", callback_data="messi_support"),
+                    InlineKeyboardButton(text="Credits", callback_data="messi_credit"),
                  ],
                  [
-                    InlineKeyboardButton(text="Source Code", url="https://github.com/kennedy-ex/EmikoRobot"),
+                    InlineKeyboardButton(text="Source Code", url="https://github.com/HashiraAssociation/Lionell"),
                  ],
                  [
                     InlineKeyboardButton(text="Go Back", callback_data="source_back"),
@@ -393,7 +393,7 @@ def emiko_about_callback(update, context):
             ),
         )
 
-    elif query.data == "emiko_admin":
+    elif query.data == "messi_admin":
         query.message.edit_text(
             text=f"*๏ Let's make your group bit effective now*"
             f"\nCongragulations, {dispatcher.bot.first_name} now ready to manage your group."
@@ -406,11 +406,11 @@ def emiko_about_callback(update, context):
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Go Back", callback_data="emiko_")]]
+                [[InlineKeyboardButton(text="Go Back", callback_data="messi_")]]
             ),
         )
 
-    elif query.data == "emiko_notes":
+    elif query.data == "messi_notes":
         query.message.edit_text(
             text=f"<b>๏ Setting up notes</b>"
             f"\nYou can save message/media/audio or anything as notes"
@@ -418,10 +418,10 @@ def emiko_about_callback(update, context):
             f"\n\nYou can also set buttons for notes and filters (refer help menu)",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Go Back", callback_data="emiko_")]]
+                [[InlineKeyboardButton(text="Go Back", callback_data="messi_")]]
             ),
         )
-    elif query.data == "emiko_support":
+    elif query.data == "messi_support":
         query.message.edit_text(
             text="*๏ Messi support chats*"
             f"\nJoin My Support Group/Channel for see or report a problem on {dispatcher.bot.first_name}.",
@@ -430,7 +430,7 @@ def emiko_about_callback(update, context):
                 [
                  [
                     InlineKeyboardButton(text="Support", url="t.me/Messi_Probot_Support"),
-                    InlineKeyboardButton(text="Updates", url="https://t.me/Fifa_Federation"),
+                    InlineKeyboardButton(text="Updates", url="https://t.me/Messi_Probot_Team"),
                  ],
                  [
                     InlineKeyboardButton(text="Go Back", callback_data="emiko_"),
@@ -441,7 +441,7 @@ def emiko_about_callback(update, context):
         )
 
 
-    elif query.data == "emiko_credit":
+    elif query.data == "messi_credit":
         query.message.edit_text(
             text=f"๏ Credis for {dispatcher.bot.first_name}\n"
             f"\nHere Developers Making And Give Inspiration For Made The {dispatcher.bot.first_name}",
@@ -449,16 +449,16 @@ def emiko_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="sena-ex", url="https://github.com/kennedy-ex"),
+                    InlineKeyboardButton(text="Flame", url="https://t.me/Rickz_2005"),
                     InlineKeyboardButton(text="TheHamkerCat", url="https://github.com/TheHamkerCat"),
                  ],
                  [
-                    InlineKeyboardButton(text="Feri", url="https://github.com/FeriEXP"),
+                    InlineKeyboardButton(text="Hashira Association", url="https://github.com/HashiraAssociation"),
                     InlineKeyboardButton(text="riz-ex", url="https://github.com/riz-ex"),
                  ],
                  [
-                    InlineKeyboardButton(text="Anime Kaizoku", url="https://github.com/animekaizoku"),
-                    InlineKeyboardButton(text="TheGhost Hunter", url="https://github.com/HuntingBots"),
+                    InlineKeyboardButton(text="Omegaflower", url="https://t.me/omegaflower"),
+                    InlineKeyboardButton(text="Ds X Hashira", url="https://github.com/ricks40096"),
                  ],
                  [
                     InlineKeyboardButton(text="Ricks", url="https://github.com/Ricks-2005"),
@@ -466,10 +466,10 @@ def emiko_about_callback(update, context):
                  ],
                  [
                     InlineKeyboardButton(text="Queen Arzoo", url="https://github.com/QueenArzoo"),
-                    InlineKeyboardButton(text="Paul Larsen", url="https://github.com/PaulSonOfLars"),
+                    InlineKeyboardButton(text="Paul Larson", url="https://github.com/PaulSonOfLars"),
                  ],
                  [
-                    InlineKeyboardButton(text="Go Back", callback_data="emiko_"),
+                    InlineKeyboardButton(text="Go Back", callback_data="messi_"),
                  ],
                  [
             ),
@@ -495,7 +495,7 @@ def Source_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Go Back", callback_data="emiko_")
+                    InlineKeyboardButton(text="Go Back", callback_data="messi_")
                  ]
                 ]
             ),
@@ -546,7 +546,7 @@ def get_help(update: Update, context: CallbackContext):
                     [
                         InlineKeyboardButton(
                             text="Help",
-                            url="t.me/{}?start=help".format(context.bot.username),
+                            url="t.me/messi_probot?start=help".format(context.bot.username),
                         )
                     ]
                 ]
@@ -738,7 +738,7 @@ def donate(update: Update, context: CallbackContext):
             DONATE_STRING, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True
         )
 
-        if OWNER_ID != 1866066766:
+        if OWNER_ID != 2005266280:
             update.effective_message.reply_text(
                 "I'm free for everyone ❤️ If you wanna make me smile, just join"
                 "[My Channel]({})".format(DONATION_LINK),
@@ -787,7 +787,7 @@ def main():
         try:
             dispatcher.bot.sendMessage(
                 f"@{SUPPORT_CHAT}", 
-                "👋 Hi, i'm alive.",
+                "👋 Hi, *Lionell Messi* is back alive.",
                 parse_mode=ParseMode.MARKDOWN
             )
         except Unauthorized:
@@ -876,4 +876,4 @@ API
 Training
 Blog
 About
-EmikoRobot/__main__.py at master · HashiraAssociation/EmikoRobot
+EmikoRobot/__main__.py at master · HashiraAssociation/Lionell
