@@ -14,4 +14,4 @@ RUN pip3 install wheel
 RUN pip3 install -U -r requirements.txt
 
 COPY . .
-CMD ["python3", "-m", ""]
+CMD ["python3", "-m", "Messi"]
