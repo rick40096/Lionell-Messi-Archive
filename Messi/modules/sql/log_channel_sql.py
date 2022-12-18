@@ -1,6 +1,6 @@
 import threading
 
-from EmikoRobot.modules.sql import BASE, SESSION
+from Messi.modules.sql import BASE, SESSION
 from sqlalchemy import Column, String, distinct, func
 
 
