@@ -21,4 +21,6 @@ src="https://img.shields.io/badge/Deploy%20To%20Heroku-red?style=flat&logo=herok
 
 
 
-<h2 align="center">BOT IS STILL UNDER DEVELOPMENT. PLEASE WAIT FOR ALL MODULES TO BE CREATED </h2>
+<p align="center">
+<img src="https://readme-typing-svg.herokuapp.com?color=1C71FA&width=420&lines=I+Belong+To+Messi+Probot+Team%E2%9C%8C%EF%B8%8F;My+Developer+Is+ARCHISMAN%E9%8D%A6%EF%B8%8E">
+</p>
