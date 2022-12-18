@@ -1,10 +1,7 @@
 import threading
 from sqlalchemy import Column, String
-from EmikoRobot.modules.sql import BASE, SESSION
-#   |----------------------------------|
-#   |  Test Module by @EverythingSuckz |
-#   |        Kang with Credits         |
-#   |----------------------------------|
+from Messi.modules.sql import BASE, SESSION
+
 class NSFWChats(BASE):
     __tablename__ = "nsfw_chats"
     chat_id = Column(String(14), primary_key=True)
