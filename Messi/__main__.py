@@ -448,7 +448,7 @@ def messi_about_callback(update, context):
                     InlineKeyboardButton(text="Updates", url="https://t.me/Messi_Probot_Team"),
                  ],
                  [
-                    InlineKeyboardButton(text="Go Back", callback_data="emiko_"),
+                    InlineKeyboardButton(text="Go Back", callback_data="messi_"),
                  
                  ]
                 ]
@@ -456,37 +456,25 @@ def messi_about_callback(update, context):
         )
 
 
-    elif query.data == "messi_credit":
+   elif query.data == "messi_credit":
         query.message.edit_text(
-            text=f"๏ Credis for {dispatcher.bot.first_name}\n"
-            f"\nHere Developers Making And Give Inspiration For Made The {dispatcher.bot.first_name}",
+            text=f"๏ Credis for *Messi*\n"
+            "\nHere Are The Developers Who Made And Gave Inspiration For The Messi A.I",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
-                 [
-                    InlineKeyboardButton(text="Flame", url="https://t.me/Rickz_2005"),
-                    InlineKeyboardButton(text="TheHamkerCat", url="https://github.com/TheHamkerCat"),
-                 ],
-                 [
-                    InlineKeyboardButton(text="Hashira Association", url="https://github.com/HashiraAssociation"),
-                    InlineKeyboardButton(text="riz-ex", url="https://github.com/riz-ex"),
-                 ],
-                 [
-                    InlineKeyboardButton(text="Omegaflower", url="https://t.me/omegaflower"),
-                    InlineKeyboardButton(text="Ds X Hashira", url="https://github.com/ricks40096"),
-                 ],
-                 [
-                    InlineKeyboardButton(text="Ricks", url="https://github.com/Ricks-2005"),
-                    InlineKeyboardButton(text="Orofer", url="https://github.com/orofer-xt"),
-                 ],
-                 [
-                    InlineKeyboardButton(text="Queen Arzoo", url="https://github.com/QueenArzoo"),
-                    InlineKeyboardButton(text="Paul Larson", url="https://github.com/PaulSonOfLars"),
-                 ],
-                 [
-                    InlineKeyboardButton(text="Go Back", callback_data="messi_"),
-                 ],
-                 [
+                    [
+                        InlineKeyboardButton(
+                            text="H A S H I R A", url="https://github.com/HashiraAssociation"
+                        ),
+                        InlineKeyboardButton(
+                            text="H A S H I R A (telegram)", url="https://t.me/Hashira_Association"
+                        ),
+                    ],
+                    [
+                        InlineKeyboardButton(text="B A C K", callback_data="messi_"),
+                    ],
+                ]
             ),
         )
 
