@@ -81,10 +81,12 @@ def get_readable_time(seconds: int) -> str:
 
     return ping_time
 
-
+GROUP_START_IMG = "https://graph.org//file/b132c3bcde2bf678189e8.mp4" 
+    
+    
 PM_START_TEXT = """
 *Hello {} !*
-✪ I'm *Lionell Messi* an football-themed management bot [✨](https://graph.org//file/e17d325b324f88bfeef9c.jpg)
+✪ I'm *Lionell Messi* a football-themed management bot [✨](https://graph.org//file/e17d325b324f88bfeef9c.jpg)
 ────────────────────────
 × *Uptime:* `{}`
 × `{}` *users, across* `{}` *chats.*
@@ -99,12 +101,12 @@ buttons = [
     [
         InlineKeyboardButton(text="Get Help", callback_data="help_back"),
         InlineKeyboardButton(
-            text="Try inline!​​", switch_inline_query_current_chat=""
+            text="My Officials", url=f"t.me/Fifa_Federation"
         ),
     ],
     [
         InlineKeyboardButton(
-            text="➗ Add Me To Your Group ➗", url=f"t.me/messi_probot?startgroup=new"),
+            text="+  Add Me To Your Group +", url=f"t.me/messi_probot?startgroup=new"),
     ],
 ]
 
@@ -229,11 +231,24 @@ def start(update: Update, context: CallbackContext):
                 timeout=60,
                 disable_web_page_preview=False,
             )
+               
     else:
-        update.effective_message.reply_text(
-            f"👋 Hi, I'm *Lionell Messi*. Nice to meet You. If You Have Any Queries About Me , Join @Messi_Probot_Support",
-            parse_mode=ParseMode.HTML
-       )
+        update.effective_message.reply_animation(
+            GROUP_START_IMG,
+            caption="<code> Hey there I am with you Since</code>: <code>{}</code>".format(
+                uptime
+            ),
+            parse_mode=ParseMode.HTML,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                    [
+                        InlineKeyboardButton(
+                            text="U P D A T E S", url="https://t.me/Messi_Probot_Team"
+                        ),
+                    ],
+                ]
+            ),
+        )
 
 
 def error_handler(update, context):
@@ -786,9 +801,9 @@ def main():
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
             dispatcher.bot.sendMessage(
-                f"@{SUPPORT_CHAT}", 
-                "👋 Hi, *Lionell Messi* is back alive.",
-                parse_mode=ParseMode.MARKDOWN
+                f"@{SUPPORT_CHAT}",
+                "[⚽️](https://graph.org//file/8f830535f8a86f3bf4298.jpg) Hi my dear fans, [Messi](t.me/messi_probot) is back alive.",
+                parse_mode=ParseMode.MARKDOWN,
             )
         except Unauthorized:
             LOGGER.warning(
