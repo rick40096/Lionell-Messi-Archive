@@ -19,10 +19,10 @@
 <p align="center"><a href="https://dashboard.heroku.com/new?template=https://github.com/HashiraAssociation/Lionell-Messi"> <img 
 src="https://img.shields.io/badge/Deploy%20To%20Heroku-red?style=flat&logo=heroku" width="210" height="34.45" /></a></p>
 
+<h2 align='center">Please Wait For All Modules To Be Added ⚽️ </h2>
 
 
 <p align="center">
 <img src="https://readme-typing-svg.herokuapp.com?color=1C71FA&width=420&lines=Messi+Robot+Is+Under+Development%E2%9C%8C%EF%B8%8F;Please+Wait+For+Completition%B8%8E">
 </p>
 
-<h2 align='center">Please Wait For All Modules To Be Added ⚽️ </h2>
