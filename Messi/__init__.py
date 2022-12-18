@@ -27,7 +27,7 @@ def get_user_list(__init__, key):
         return json.load(json_file)[key]
 
 # enable logging
-FORMAT = "[EmikoRobot] %(message)s"
+FORMAT = "[Messi] %(message)s"
 logging.basicConfig(
     handlers=[logging.FileHandler("log.txt"), logging.StreamHandler()],
     level=logging.INFO,
@@ -37,8 +37,8 @@ logging.basicConfig(
 logging.getLogger("pyrogram").setLevel(logging.INFO)
 logging.getLogger('ptbcontrib.postgres_persistence.postgrespersistence').setLevel(logging.WARNING)
 
-LOGGER = logging.getLogger('[EmikoRobot]')
-LOGGER.info("Emiko is starting. | An Kennedy Project Parts. | Licensed under GPLv3.")
+LOGGER = logging.getLogger('[Messi]')
+LOGGER.info("Messi. | A Hashira Project Part. | Licensed under GPLv3.")
 LOGGER.info("Not affiliated to other anime or Villain in any way whatsoever.")
 LOGGER.info("Project maintained by: github.com/kennedy-ex (t.me/excrybaby)")
 
@@ -123,7 +123,7 @@ if ENV:
     ARQ_API_URL = os.environ.get("ARQ_API_URL", "https://arq.hamker.in")
     ARQ_API_KEY = os.environ.get("ARQ_API_KEY", "BCYKVF-KYQWFM-JCMORU-RZWOFQ-ARQ")
     MONGO_PORT = os.environ.get("MONGO_PORT")
-    MONGO_DB = os.environ.get("MONGO_DB", "Emiko")
+    MONGO_DB = os.environ.get("MONGO_DB", "Messi")
     ALLOW_CHATS = os.environ.get("ALLOW_CHATS", True)
 
     try:
@@ -300,7 +300,7 @@ DEMONS = list(DEMONS)
 TIGERS = list(TIGERS)
 
 # Load at end to ensure all prev variables have been set
-from EmikoRobot.modules.helper_funcs.handlers import (
+from Messi.modules.helper_funcs.handlers import (
     CustomCommandHandler,
     CustomMessageHandler,
     CustomRegexHandler,
