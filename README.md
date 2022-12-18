@@ -21,4 +21,4 @@ src="https://img.shields.io/badge/Deploy%20To%20Heroku-red?style=flat&logo=herok
 
 
 
-#NOTE :- BOT IS STILL UNDER DEVELOPMENT. PLEASE WAIT FOR ALL MODULES TO BE CREATED
+<h2 align="center">BOT IS STILL UNDER DEVELOPMENT. PLEASE WAIT FOR ALL MODULES TO BE CREATED </h2>
