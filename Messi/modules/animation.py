@@ -1,4 +1,4 @@
-import time
+'''import time
 from typing import List
 
 from telegram import Update
@@ -322,3 +322,4 @@ __handlers__ = [
     BLOCKANIMATION_HANDLER,
     KILL_HANDLER,
 ]
+'''
