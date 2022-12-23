@@ -33,6 +33,8 @@ class Config(object):
     NO_LOAD = ["rss", "cleaner", "connection", "math"]
     WEBHOOK = False
     INFOPIC = True
+    MONGO_PORT = get_int_key("27017")
+    MONGO_DB = "mongodb+srv://Rick:Rick@cluster0.mq48ssf.mongodb.net/?retryWrites=true&w=majority"
     URL = None
     SPAMWATCH_API = "pQ9y9GTPTlkMrZtBuTcyMU7xyxSSmUu_pEbkosNd_LLAbhNoxvtPVc1FUFfFiRVU"  # go to support.spamwat.ch to get key
     SPAMWATCH_SUPPORT_CHAT = "@SpamWatchSupport"
