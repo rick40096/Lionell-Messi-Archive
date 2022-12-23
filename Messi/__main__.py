@@ -456,7 +456,7 @@ def messi_about_callback(update, context):
         )
 
 
-   elif query.data == "messi_credit":
+    elif query.data == "messi_credit":
         query.message.edit_text(
             text=f"๏ Credis for *Messi*\n"
             "\nHere Are The Developers Who Made And Gave Inspiration For The Messi A.I",
