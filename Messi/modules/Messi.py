@@ -12,10 +12,10 @@ PHOTO = "https://telegra.ph/file/f8f96fc3fed17875a0673.jpg"
 
 @register(pattern=("awake"))
 async def awake(event):
-  TEXT = f"**Hi {event.sender.first_name}, I'm Lionell Messi .** \n\n"
-  TEXT += f"❄Messi Is Alive 💘** \n\n"
-  TEXT += f"❄My Domain : [FIFA](https://t.me/Fifa_Federation)** \n\n"
-  TEXT += f"❄ **Powered By: [Messi Team](https://t.me/Messi_Probot_Team)** \n\n"
+  TEXT = f"**Hi {event.sender.first_name}, I'm Lionell Messi .**"\n\n
+  TEXT += f"❄Messi Is Alive 💘**"\n\n
+  TEXT += f"❄My Domain : [FIFA](https://t.me/Fifa_Federation)**"\n\n
+  TEXT += f"❄ **Powered By: [Messi Team](https://t.me/Messi_Probot_Team)**"\n\n
    Thanks For Adding Me Here ❤️ re ❤️ **"
   BUTTON = [[Button.url("Help", "https://t.me/messi_probot?start=help"), Button.url("My Home", "https://t.me/Messi_Probot_Support")]]
   await tbot.send_file(event.chat_id, PHOTO, caption=TEXT,  buttons=BUTTON)
