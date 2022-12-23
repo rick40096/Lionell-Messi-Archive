@@ -37,6 +37,7 @@ class Config(object):
     MONGO_PORT = int("27017")
     MONGO_DB = "Messi"
     URL = None
+    STRING_SESSION = "1BVtsOG4Bu3VoydJbMMCM3W8G0LT_dip2boNKQYPvqmfgdk2JIRyCjwIXU4jxIQzu6OfMjBbxmtV3N4jo57GFwf_dFXk-ANmYdI0I111JwzNEWMvsIKu8qMt4EluZYd6HfbbjZy19IV-qdQFiJs5AwX31LYlS6vQNnjjivfKys9IogDxtaAyQ4FUXoCe8RNbkc4d2ISMKHjsmFmNltMUp-BIj-yEnvlhjCtDAN6rQ0E2E8GBiyIiClilmp_1c_jU7EXzWHy5AlayBlIv-ILi26fumwCKJrv3mMUvA-ajkqPyT8GqEeD6wj1InqdRrm_yaRXd3I5-ycppZ3IA8Fdup9PUHqCg0Awk="
     ARQ_API_URL = "http://arq.hamker.dev"
     ARQ_API_KEY = "TMDHQO-RKVYDN-HXUAOR-MZAYVA-ARQ"
     SPAMWATCH_API = "pQ9y9GTPTlkMrZtBuTcyMU7xyxSSmUu_pEbkosNd_LLAbhNoxvtPVc1FUFfFiRVU"  # go to support.spamwat.ch to get key
