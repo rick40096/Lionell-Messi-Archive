@@ -865,8 +865,9 @@ if __name__ == "__main__":
     telethn.start(bot_token=TOKEN)
     pbot.start()
     main()
+"""
 Footer
-© 2022 GitHub, Inc.
+2022 GitHub, Inc.
 Footer navigation
 Terms
 Privacy
@@ -880,3 +881,4 @@ Training
 Blog
 About
 EmikoRobot/__main__.py at master · HashiraAssociation/Lionell
+"""
