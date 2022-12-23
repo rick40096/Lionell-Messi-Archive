@@ -814,7 +814,7 @@ def main():
     )
 
     about_callback_handler = CallbackQueryHandler(
-        emiko_about_callback, pattern=r"emiko_", run_async=True
+        messi_about_callback, pattern=r"messi_", run_async=True
     )
 
     source_callback_handler = CallbackQueryHandler(
