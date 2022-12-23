@@ -1,4 +1,4 @@
-"""import os
+""""""import os
 import re
 import random
 
@@ -19,4 +19,4 @@ async def awake(event):
    Thanks For Adding Me Here ❤️ re ❤️ **"
   BUTTON = [[Button.url("Help", "https://t.me/messi_probot?start=help"), Button.url("My Home", "https://t.me/Messi_Probot_Support")]]
   await tbot.send_file(event.chat_id, PHOTO, caption=TEXT,  buttons=BUTTON)
-"""
+""""""
