@@ -1,3 +1,4 @@
+'''
 import html
 
 from telegram import ParseMode, Update, InlineKeyboardButton, InlineKeyboardMarkup
@@ -1070,3 +1071,4 @@ __handlers__ = [
     SET_TITLE_HANDLER,
     ADMIN_REFRESH_HANDLER,
 ]
+'''
