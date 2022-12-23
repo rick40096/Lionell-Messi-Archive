@@ -37,6 +37,7 @@ class Config(object):
     MONGO_PORT = int("27017")
     MONGO_DB = "Messi"
     URL = None
+    ARQ_API_KEY = "TMDHQO-RKVYDN-HXUAOR-MZAYVA-ARQ"
     SPAMWATCH_API = "pQ9y9GTPTlkMrZtBuTcyMU7xyxSSmUu_pEbkosNd_LLAbhNoxvtPVc1FUFfFiRVU"  # go to support.spamwat.ch to get key
     SPAMWATCH_SUPPORT_CHAT = "@SpamWatchSupport"
 
