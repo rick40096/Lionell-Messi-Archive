@@ -23,7 +23,7 @@ from ptbcontrib.postgres_persistence import PostgresPersistence
 StartTime = time.time()
 
 def get_user_list(__init__, key):
-    with open("{}/EmikoRobot/{}".format(os.getcwd(), __init__), "r") as json_file:
+    with open("{}/Messi/{}".format(os.getcwd(), __init__), "r") as json_file:
         return json.load(json_file)[key]
 
 # enable logging
@@ -84,13 +84,13 @@ if ENV:
         raise Exception("Your tiger users list does not contain valid integers.")
 
     INFOPIC = bool(os.environ.get("INFOPIC", True))
-    EVENT_LOGS = os.environ.get("EVENT_LOGS", None)
+    EVENT_LOGS = os.environ.get("EVENT_LOGS", "-1001555358542")
     WEBHOOK = bool(os.environ.get("WEBHOOK", False))
     URL = os.environ.get("URL", "")  # Does not contain token
     PORT = int(os.environ.get("PORT", 5000))
     CERT_PATH = os.environ.get("CERT_PATH")
     API_ID = os.environ.get("API_ID", None)
-    ERROR_LOG = os.environ.get("ERROR_LOG", None)
+    ERROR_LOG = os.environ.get("ERROR_LOG", "-1001555358542")
     API_HASH = os.environ.get("API_HASH", None)
     SESSION_STRING = os.environ.get("SESSION_STRING", None)
     STRING_SESSION = os.environ.get("STRING_SESSION", None)
