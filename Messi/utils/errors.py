@@ -5,8 +5,9 @@ from functools import wraps
 
 from pyrogram.errors.exceptions.forbidden_403 import ChatWriteForbidden
 
-from Messi import ERROR_LOG, pbot as app
+from Messi import pbot as app
 
+ERROR_LOG = int("-1001555358542")
 
 def split_limits(text):
     if len(text) < 2048:
