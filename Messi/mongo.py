@@ -6,7 +6,7 @@ from motor import motor_asyncio
 from pymongo import MongoClient
 from pymongo.errors import ServerSelectionTimeoutError
 
-from Messi import MONGO_DB_URI
+from Messi.config import *
 from Messi.confing import get_int_key, get_str_key
 
 
