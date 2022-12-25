@@ -33,7 +33,7 @@ class Config(object):
     NO_LOAD = ["rss", "cleaner", "connection", "math"]
     WEBHOOK = False
     INFOPIC = True
-    MONGO_DB_URI = "mongodb+srv://Rick:Rick@cluster0.mq48ssf.mongodb.net/?retryWrites=true&w=majority"
+    MONGO_DB_URI = "mongodb+srv://archisman:Rick_2005@cluster0.ts8ihph.mongodb.net/?retryWrites=true&w=majority"
     MONGO_PORT = int("27017")
     MONGO_DB = "Messi"
     URL = None
