@@ -39,8 +39,9 @@ async def repo(_, message):
 **Pyrogram Version :** `{z}`
 ** My collaborators**
 ** 1) [♤](https://t.me/rickz_2005)**
+** 1) [♤](https://t.me/ricks_005)**
 
-**Sorry but the repo is not available.**
+**Sorry but the repo is not available till the bot reaches 100 chats**
 """,
         reply_markup=InlineKeyboardMarkup(
             [
