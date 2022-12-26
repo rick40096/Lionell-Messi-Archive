@@ -11,7 +11,7 @@ from Messi import telethn as tbot
 
 PHOTO = "https://telegra.ph/file/9b2f5c511b0ecdfbabdcf.mp4"
 
-@register(pattern=("/awake_messi"))
+@register(pattern=("awake messi"))
 async def awake(event):
   TEXT = f"**Hi [{event.sender.first_name}](tg://user?id={event.sender.id}), I'm Victor Nikiforov** \n\n"
   TEXT += "🗡 **I'm Working Properly** \n\n"
