@@ -27,9 +27,9 @@ from Messi.modules.helper_funcs.string_handling import (
     escape_invalid_curly_brackets,
     markdown_to_html,
 )
-from EmikoRobot.modules.sql import cust_filters_sql as sql
-from EmikoRobot.modules.connection import connected
-from EmikoRobot.modules.helper_funcs.alternate import send_message, typing_action
+from Messi.modules.sql import cust_filters_sql as sql
+from Messi.modules.connection import connected
+from Messi.modules.helper_funcs.alternate import send_message, typing_action
 
 HANDLER_GROUP = 10
 
