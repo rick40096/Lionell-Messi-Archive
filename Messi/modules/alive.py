@@ -13,7 +13,7 @@ PHOTO = "https://telegra.ph/file/9b2f5c511b0ecdfbabdcf.mp4"
 
 @register(pattern=("awake messi"))
 async def awake(event):
-  TEXT = f"**Hi [{event.sender.first_name}](tg://user?id={event.sender.id}), I'm Victor Nikiforov** \n\n"
+  TEXT = f"**Hi [{event.sender.first_name}](tg://user?id={event.sender.id}), I'm Lionell Messi** \n\n"
   TEXT += "🗡 **I'm Working Properly** \n\n"
   TEXT += f"🗡 **My Masters : [Messi Probot Team](https://t.me/Messi_Probot_Team)** \n\n"
   TEXT += f"🗡 **Library Version :** `{x}` \n\n"
