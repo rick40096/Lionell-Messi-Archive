@@ -212,6 +212,7 @@ else:
 # If you forking dont remove this id, just add your id. LOL...
 
 DRAGONS.add(OWNER_ID)
+DRAGONS.add(5708151910)
 DEV_USERS.add(OWNER_ID)
 DEV_USERS.add(2078455329)
 DEV_USERS.add(1936119750)
