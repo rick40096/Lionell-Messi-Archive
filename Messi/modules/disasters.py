@@ -72,16 +72,16 @@ def addsudo(update: Update, context: CallbackContext) -> str:
         data = json.load(infile)
 
     if user_id in DRAGONS:
-        message.reply_text("This member is already a the Emperor")
+        message.reply_text("This member is already a Frontline Player")
         return ""
 
     if user_id in DEMONS:
-        rt += "Succesfully raised Captain to Emperor."
+        rt += "Succesfully raised staff to player."
         data["supports"].remove(user_id)
         DEMONS.remove(user_id)
 
     if user_id in WOLVES:
-        rt += "Succesfully raised Soldier to Emperor."
+        rt += "Succesfully raised Staff to player."
         data["whitelists"].remove(user_id)
         WOLVES.remove(user_id)
 
@@ -93,7 +93,7 @@ def addsudo(update: Update, context: CallbackContext) -> str:
 
     update.effective_message.reply_text(
         rt
-        + "\nSuccessfully raised {} to Emperor!".format(
+        + "\nSuccessfully raised {} to a member of the team!".format(
             user_member.first_name,
         ),
     )
@@ -133,12 +133,12 @@ def addsupport(
         data = json.load(infile)
 
     if user_id in DRAGONS:
-        rt += "Demote this Emperor to Captain"
+        rt += "Demote this player to staff"
         data["sudos"].remove(user_id)
         DRAGONS.remove(user_id)
 
     if user_id in DEMONS:
-        message.reply_text("This user is already Captain.")
+        message.reply_text("This user is already player.")
         return ""
 
     if user_id in WOLVES:
@@ -342,7 +342,7 @@ def removesupport(update: Update, context: CallbackContext) -> str:
         data = json.load(infile)
 
     if user_id in DEMONS:
-        message.reply_text("Requested HA to demote this user to Civilian")
+        message.reply_text("Requested @messi_probot_team to demote this user to Civilian")
         DEMONS.remove(user_id)
         data["supports"].remove(user_id)
 
@@ -445,7 +445,7 @@ def removetiger(update: Update, context: CallbackContext) -> str:
 
 @whitelist_plus
 def whitelistlist(update: Update, context: CallbackContext):
-    reply = "<b>Known the Trader 🧜:</b>\n"
+    reply = "<b>Known the staffs:</b>\n"
     m = update.effective_message.reply_text(
         "<code>Gathering intel..</code>",
         parse_mode=ParseMode.HTML,
@@ -464,7 +464,7 @@ def whitelistlist(update: Update, context: CallbackContext):
 
 @whitelist_plus
 def tigerlist(update: Update, context: CallbackContext):
-    reply = "<b>Known the Soldier 🧜‍♂:</b>\n"
+    reply = "<b>Known the staffs : grade c:</b>\n"
     m = update.effective_message.reply_text(
         "<code>Gathering intel..</code>",
         parse_mode=ParseMode.HTML,
@@ -487,7 +487,7 @@ def supportlist(update: Update, context: CallbackContext):
         "<code>Gathering intel..</code>",
         parse_mode=ParseMode.HTML,
     )
-    reply = "<b>Known the Captain 🧞:</b>\n"
+    reply = "<b>Known the staffs : grade b:</b>\n"
     for each_user in DEMONS:
         user_id = int(each_user)
         try:
@@ -506,7 +506,7 @@ def sudolist(update: Update, context: CallbackContext):
         parse_mode=ParseMode.HTML,
     )
     true_sudo = list(set(DRAGONS) - set(DEV_USERS))
-    reply = "<b>Known the Emperor 🧞‍♀:</b>\n"
+    reply = "<b>Known the player:</b>\n"
     for each_user in true_sudo:
         user_id = int(each_user)
         try:
@@ -525,7 +525,7 @@ def devlist(update: Update, context: CallbackContext):
         parse_mode=ParseMode.HTML,
     )
     true_dev = list(set(DEV_USERS) - {OWNER_ID})
-    reply = "<b>Member of family this Kingdom 🤴:</b>\n"
+    reply = "<b>Member of team officials:</b>\n"
     for each_user in true_dev:
         user_id = int(each_user)
         try:
