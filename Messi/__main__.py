@@ -86,12 +86,12 @@ GROUP_START_IMG = "https://graph.org//file/b132c3bcde2bf678189e8.mp4"
     
 PM_START_TEXT = """
 *Hello {} !*
-✪ I'm *Lionell Messi* a football-themed management bot [✨](https://graph.org//file/e17d325b324f88bfeef9c.jpg)
+☆ I'm *Lionell Messi* a football-themed management bot [✨](https://graph.org//file/e17d325b324f88bfeef9c.jpg)
 ────────────────────────
-× *Uptime:* `{}`
-× `{}` *users, across* `{}` *chats.*
+× * Subject Uptime:* `{}`
+× `{}` *Fans, across* `{}` *Groups.*
 ────────────────────────
-✪ Hit /help to see my available commands.
+☆ Hit /net to know my team.
 """
 
 buttons = [
@@ -880,5 +880,5 @@ API
 Training
 Blog
 About
-EmikoRobot/__main__.py at master · HashiraAssociation/Lionell
+Messi/__main__.py at master · HashiraAssociation/Lionell
 """
