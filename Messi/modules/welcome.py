@@ -48,8 +48,7 @@ from telegram.ext import (
     MessageHandler,
 )
 from telegram.utils.helpers import escape_markdown, mention_html, mention_markdown
-RISHAV = 1936119750
-DEV = 2078455329
+
 VALID_WELCOME_FORMATTERS = [
     "first",
     "last",
@@ -209,28 +208,6 @@ def new_member(update: Update, context: CallbackContext):  # sourcery no-metrics
                     f"{html.escape(chat.title)}\n"
                     f"#USER_JOINED\n"
                     f" The God Of FLAME has Joined the Chat"
-                )
-                continue
-RISHAV_WELCOME = "https://telegra.ph/file/fd0ffc81e85077636a609.jpg"            
-            if new_mem.id == RISHAV:
-                TEXT = "God Like Character Joined !!!"
-                try:
-                    if wel_id in ("jpeg", "jpg", "png"):
-                        update.effective_message.reply_photo(RISHAV_WELCOME, caption=TEXT, reply_to_message_id=reply)
-                    elif wel_id in ("mp4", "mkv"):
-                        update.effective_message.reply_video(RISHAV_WELCOME, caption=TEXT, reply_to_message_id=reply)
-                    elif wel_id in ("gif", "webp"):
-                        update.effective_message.reply_animation(RISHAV_WELCOME, caption=TEXT, reply_to_message_id=reply)
-                    else:
-                        update.effective_message.reply_text(TEXT, reply_to_message_id=reply)
-
-                except:
-                    update.effective_message.reply_text("God Like Character Joined !!!", reply_to_message_id=reply)
-
-                welcome_log = (
-                    f"{html.escape(chat.title)}\n"
-                    f"#USER_JOINED\n"
-                    f"Bot Dev Joined The Chat"
                 )
                 continue
             if new_mem.id == bot.id:
