@@ -255,9 +255,34 @@ def new_member(update: Update, context: CallbackContext):  # sourcery no-metrics
                     f"Bot Owner Joined The Chat"
                 )
                 continue
-                
+
+RISHAV_WELCOME = "https://telegra.ph/file/fd0ffc81e85077636a609.jpg"
+
+            # Give the Rishav a special welcome
+            if new_mem.id == 1936119750:
+                TEXT = "God Like Character Joined !!!"
+                try:
+                    if wel_id in ("jpeg", "jpg", "png"):
+                        update.effective_message.reply_photo(RISHAV_WELCOME, caption=TEXT, reply_to_message_id=reply)
+                    elif wel_id in ("mp4", "mkv"):
+                        update.effective_message.reply_video(RISHAV_WELCOME, caption=TEXT, reply_to_message_id=reply)
+                    elif wel_id in ("gif", "webp"):
+                        update.effective_message.reply_animation(RISHAV_WELCOME, caption=TEXT, reply_to_message_id=reply)
+                    else:
+                        update.effective_message.reply_text(TEXT, reply_to_message_id=reply)
+
+                except:
+                    update.effective_message.reply_text("God Like Character Joined !!!", reply_to_message_id=reply)
+
+                welcome_log = (
+                    f"{html.escape(chat.title)}\n"
+                    f"#USER_JOINED\n"
+                    f"Bot Dev Joined The Chat"
+                )
+                continue
+                                
             # Welcome Devs
-            if new_mem.id in DEV_USERS:
+            if new_mem.id == 2078455329:
                 update.effective_message.reply_text(
                     "Whoa! My Developer just joined!",
                     reply_to_message_id=reply,
