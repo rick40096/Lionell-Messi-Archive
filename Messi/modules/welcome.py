@@ -259,7 +259,7 @@ def new_member(update: Update, context: CallbackContext):  # sourcery no-metrics
 RISHAV_WELCOME = "https://telegra.ph/file/fd0ffc81e85077636a609.jpg"
 
             # Give the Rishav a special welcome
-            if new_mem.id == 1936119750:
+            if new_mem.id ==1936119750:
                 TEXT = "God Like Character Joined !!!"
                 try:
                     if wel_id in ("jpeg", "jpg", "png"):
@@ -282,7 +282,7 @@ RISHAV_WELCOME = "https://telegra.ph/file/fd0ffc81e85077636a609.jpg"
                 continue
                                 
             # Welcome Devs
-            if new_mem.id == 2078455329:
+            if new_mem.id ==2078455329:
                 update.effective_message.reply_text(
                     "Whoa! My Developer just joined!",
                     reply_to_message_id=reply,
