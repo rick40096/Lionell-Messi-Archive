@@ -45,14 +45,14 @@ class Config(object):
 
     # OPTIONAL
     ##List of id's -  (not usernames) for users which have sudo access to the bot.
-    DRAGONS = ("DRAGONS", None)
+    DRAGONS = int("")
     ##List of id's - (not usernames) for developers who will have the same perms as the owner
-    DEV_USERS = ("DEV_USERS", None)
+    DEV_USERS = int("")
     ##List of id's (not usernames) for users which are allowed to gban, but can also be banned.
-    DEMONS = ("DEMONS", None)
+    DEMONS = int("")
     # List of id's (not usernames) for users which WONT be banned/kicked by the bot.
-    TIGERS = ("TIGERS", None)
-    WOLVES = ("WOLVES", None)
+    TIGERS = int("")
+    WOLVES = int("")
     DONATION_LINK = None  # EG, paypal
     CERT_PATH = None
     PORT = 5000
