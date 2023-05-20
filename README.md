@@ -13,10 +13,10 @@
     <img src="https://img.shields.io/badge/Telegram-blue?style=for-the-badge&logo=telegram"/>
   </a>  
  </a>
-  <a href="https://github.com/HashiraAssociation">
+  <a href="https://github.com/PrimexRick">
     <img src="https://img.shields.io/github/followers/h0daka?label=GitHub&logo=github&style=for-the-badge&color=green"/>
   </a>
-<p align="center"><a href="https://dashboard.heroku.com/new?template=https://github.com/primexrick/Lionell-Messi"> <img 
+<p align="center"><a href="https://dashboard.heroku.com/new?template=https://github.com/rick40096/Lionell-Messi"> <img 
 src="https://img.shields.io/badge/Deploy%20To%20Heroku-red?style=flat&logo=heroku" width="210" height="34.45" /></a></p>
 
 
