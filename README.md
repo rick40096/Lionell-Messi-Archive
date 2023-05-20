@@ -22,6 +22,6 @@ src="https://img.shields.io/badge/Deploy%20To%20Heroku-red?style=flat&logo=herok
 
 
 <p align="center">
-<img src="https://readme-typing-svg.herokuapp.com?color=1C71FA&width=420&lines=Messi+Robot+Is+Under+Development%E2%9C%8C%EF%B8%8F;Please+Wait+For+Completion%E2%9C%8C%EC%B8%8F">
+<img src="https://readme-typing-svg.herokuapp.com?color=1C71FA&width=420&lines=Messi+Robot+Is+Now+Archived%E2%9C%8C%EF%B8%8F;No+Further+Updates+On+It%E2%9C%8C%EC%B8%8F">
 </p>
 
