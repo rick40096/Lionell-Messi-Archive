@@ -29,3 +29,5 @@ src="https://img.shields.io/badge/Deploy%20To%20Heroku-red?style=flat&logo=herok
 1 . [LOST](https://telegram.dog/lost_emotion)
 
 2 . [ZORO](https://telegram.dog/immortalsxking)
+
+3 . [Primes](https://telegram.dog/primesdivision)
