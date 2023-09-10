@@ -37,13 +37,13 @@ telegraph
 heroku3
 spamwatch
 alphabet_detector
-pyrate-limiter
+pyrate-limiter==2.10.0
 cachetools
 ujson
 pretty_errors
 pygithub
 TgCrypto
-pyrogram==2.0.41
+pyrogram==2.0.106
 PyDictionary
 git+https://github.com/Sorrybabe/downloader
 youtube_search_python==1.4.9
@@ -75,6 +75,7 @@ textblob
 motor
 gpytranslate
 fontTools
+unidecode
 opencv-python-headless
 odmantic
 tzlocal
